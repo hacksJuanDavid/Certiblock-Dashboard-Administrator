@@ -39,99 +39,99 @@ const CryptMarketingValues =
 const Marketcap = () => {
   return (
     <>
-    <Seo title={"Marketcap"}/>
+      <Seo title={"Marketcap"} />
 
-    <PageHeader title="Crypto Currencies" item="Crypto Currencies" active_item="Crypto-Market"/>
-    <div>
-    {/* <!-- row --> */}
-	<Row className="row-sm">
-        <Col lg={6} xl={6} xxl={3} md={6} >
-          <Card className="custom-card">
-            <Card.Body className="">
-              <h5 className="tx-14">BTC / USD</h5>
-              <div className="d-flex">
-                <div className="volume">
-                  <h4 className="mb-2">34.4324 <span className="text-muted tx-12">$29.42</span></h4>
-                  <div className="d-flex text-muted tx-13">
-                    <span className="text-danger me-2 font-weight-bold">-0.22%</span>
-                    Volume - 76,434 USDT
+      <PageHeader title="Crypto Currencies" item="Crypto Currencies" active_item="Crypto-Market" />
+      <div>
+        {/* <!-- row --> */}
+        <Row className="row-sm">
+          <Col lg={6} xl={6} xxl={3} md={6} >
+            <Card className="custom-card">
+              <Card.Body className="">
+                <h5 className="tx-14">BTC / USD</h5>
+                <div className="d-flex">
+                  <div className="volume">
+                    <h4 className="mb-2">34.4324 <span className="text-muted tx-12">$29.42</span></h4>
+                    <div className="d-flex text-muted tx-13">
+                      <span className="text-danger me-2 font-weight-bold">-0.22%</span>
+                      Volume - 76,434 USDT
+                    </div>
+                  </div>
+                  <div className="d-flex ms-auto float-end">
+                    <Line width={150} height={120} id="btc-market" options={marketcap.Marketcap1} className="ms-auto float-end" data={marketcap.marketcap1} />
                   </div>
                 </div>
-                <div className="d-flex ms-auto float-end">
-                  <Line width={150} height={120} id="btc-market" options={marketcap.Marketcap1}  className="ms-auto float-end" data={marketcap.marketcap1} />
-                </div>
-              </div>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col lg={6} xl={6} xxl={3} md={6}>
-          <Card className="custom-card">
-            <Card.Body className=" ">
-              <h5 className="tx-14">ETH / USD</h5>
-              <div className="d-flex">
-                <div className="volume">
-                  <h4 className="mb-2">29.4124 <span className="text-muted tx-12">$23.15</span></h4>
-                  <div className="d-flex text-muted tx-13">
-                    <span className="text-success me-2 font-weight-bold">+0.23%
-                    </span>
-                    Volume - 23,346 USDT
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col lg={6} xl={6} xxl={3} md={6}>
+            <Card className="custom-card">
+              <Card.Body className=" ">
+                <h5 className="tx-14">ETH / USD</h5>
+                <div className="d-flex">
+                  <div className="volume">
+                    <h4 className="mb-2">29.4124 <span className="text-muted tx-12">$23.15</span></h4>
+                    <div className="d-flex text-muted tx-13">
+                      <span className="text-success me-2 font-weight-bold">+0.23%
+                      </span>
+                      Volume - 23,346 USDT
+                    </div>
+                  </div>
+                  <div className="d-flex ms-auto float-end">
+                    <Line width={150} height={120} options={marketcap.Marketcap2} className="ms-auto float-end" data={marketcap.marketcap2} id="ethereum-market" />
                   </div>
                 </div>
-                <div className="d-flex ms-auto float-end">
-                  <Line width={150} height={120} options={marketcap.Marketcap2} className="ms-auto float-end"  data={marketcap.marketcap2} id="ethereum-market" />
-                </div>
-              </div>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col lg={6} xl={6} xxl={3} md={6}>
-          <Card className="custom-card">
-            <Card.Body className=" ">
-              <h5 className="tx-14">XRP / USD</h5>
-              <div className="d-flex">
-                <div className="volume">
-                  <h4 className="mb-2">34.5674 <span className="text-muted tx-12">$45.24</span></h4>
-                  <div className="d-flex text-muted tx-13">
-                    <span className="text-danger me-2 font-weight-bold">-0.42%</span>
-                    Volume - 56,456 USDT
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col lg={6} xl={6} xxl={3} md={6}>
+            <Card className="custom-card">
+              <Card.Body className=" ">
+                <h5 className="tx-14">XRP / USD</h5>
+                <div className="d-flex">
+                  <div className="volume">
+                    <h4 className="mb-2">34.5674 <span className="text-muted tx-12">$45.24</span></h4>
+                    <div className="d-flex text-muted tx-13">
+                      <span className="text-danger me-2 font-weight-bold">-0.42%</span>
+                      Volume - 56,456 USDT
+                    </div>
+                  </div>
+                  <div className="d-flex ms-auto float-end">
+                    <Line width={150} height={120} options={marketcap.Marketcap3} className="ms-auto float-end" data={marketcap.marketcap3} id="xrp-market" />
                   </div>
                 </div>
-                <div className="d-flex ms-auto float-end">
-                  <Line width={150} height={120} options={marketcap.Marketcap3} className="ms-auto float-end" data={marketcap.marketcap3} id="xrp-market" />
-                </div>
-              </div>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col lg={6} xl={6} xxl={3} md={6}>
-          <Card className="custom-card">
-            <Card.Body className="">
-              <h5 className="tx-14">LTC / USD</h5>
-              <div className="d-flex">
-                <div className="volume">
-                  <h4 className="mb-2">45.4542 <span className="text-muted tx-12">$63.34</span></h4>
-                  <div className="d-flex text-muted tx-13">
-                    <span className="text-success me-2 font-weight-bold">-0.12%</span>
-                    Volume - 34,462 USDT
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col lg={6} xl={6} xxl={3} md={6}>
+            <Card className="custom-card">
+              <Card.Body className="">
+                <h5 className="tx-14">LTC / USD</h5>
+                <div className="d-flex">
+                  <div className="volume">
+                    <h4 className="mb-2">45.4542 <span className="text-muted tx-12">$63.34</span></h4>
+                    <div className="d-flex text-muted tx-13">
+                      <span className="text-success me-2 font-weight-bold">-0.12%</span>
+                      Volume - 34,462 USDT
+                    </div>
+                  </div>
+                  <div className="d-flex ms-auto float-end">
+                    <Line width={150} height={120} options={marketcap.Marketcap4} className="ms-auto float-end" data={marketcap.marketcap4} id="ltc-market" />
                   </div>
                 </div>
-                <div className="d-flex ms-auto float-end">
-                  <Line width={150} height={120} options={marketcap.Marketcap4} className="ms-auto float-end" data={marketcap.marketcap4} id="ltc-market" />
-                </div>
-              </div>
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
-						{/* <!-- End row -->
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+        {/* <!-- End row -->
 
 						<!-- row opened --> */}
-						<Row>
-        <Col xl={12} lg={12} md={12}>
-          <Card className="custom-card crypto-custom-card">
-            <Card.Header className=" border-bottom-0"><label className="main-content-label my-auto">Crypt Marketing Values</label></Card.Header>
-            <Card.Body>
-              
+        <Row>
+          <Col xl={12} lg={12} md={12}>
+            <Card className="custom-card crypto-custom-card">
+              <Card.Header className=" border-bottom-0"><label className="main-content-label my-auto">Crypt Marketing Values</label></Card.Header>
+              <Card.Body>
+
                 <Table hover responsive className="table text-nowrap border">
                   <thead className="table border-bottom">
                     <tr>
@@ -156,12 +156,12 @@ const Marketcap = () => {
                     ))}
                   </tbody>
                 </Table>
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
-						{/* <!-- Row End --> */}
-    </div>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+        {/* <!-- Row End --> */}
+      </div>
     </>
   )
 }

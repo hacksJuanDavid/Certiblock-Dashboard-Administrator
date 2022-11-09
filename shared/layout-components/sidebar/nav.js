@@ -4,7 +4,7 @@ export const MENUITEMS = [
     Items: [
       {
         path: "/components/dashboard/dashboard",
-        icon: "ti-home",
+        icon: "fa fa-home",
         type: "link",
         active: false,
         selected: false,
@@ -12,7 +12,7 @@ export const MENUITEMS = [
       },
       {
         title: "Empresas",
-        icon: "ti-wallet",
+        icon: "fa fa-briefcase",
         type: "sub",
         active: false,
         selected: false,
@@ -32,11 +32,18 @@ export const MENUITEMS = [
             title: "Colecciones",
           },
           {
-            path: "/components/empresas/documentos",
+            path: "/components/empresas/aprobaciones",
             type: "link",
             active: false,
             selected: false,
-            title: "Documentos",
+            title: "Aprobaciones",
+          },
+          {
+            path: "/components/empresas/informacion",
+            type: "link",
+            active: false,
+            selected: false,
+            title: "Información",
           },
           {
             path: "/components/empresas/marketcap",
@@ -77,7 +84,7 @@ export const MENUITEMS = [
       },
       {
         title: "Usuarios",
-        icon: "ti-shopping-cart-full",
+        icon: "fa fa-group",
         type: "sub",
         active: false,
         selected: false,

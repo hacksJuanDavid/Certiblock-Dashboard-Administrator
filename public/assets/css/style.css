@@ -105,17 +105,17 @@ License        :   Licensed under ThemeForest License
 /* ########## BOOTSTRAP OVERRIDES ########## */
 /* ###### Bootstrap ###### */
 :root {
-    --primary-bg-color: #6259ca;
-    --primary-bg-hover: #403fad;
-    --primary-transparentcolor: rgba(98, 89, 202, 0.16);
-    --primary-bg-border: #6259ca;
-    --dark-theme: #0e0e23;
-    --dark-body: #24243e;
-    --dark-border: rgba(255, 255, 255, 0.15);
-    --dark-color: #d0d0e2;
-    --dark-primary: #6259ca;
-    --indigo: #4b0082;
-    --purple: #6f42c1;
+    --primary-bg-color: #C2D72D;
+    --primary-bg-hover: #000000;
+    --primary-transparentcolor:#C2D72D;
+    --primary-bg-border: #979898;
+    --dark-theme:#000000;
+    --dark-body: #1C1F21;
+    --dark-border: :#C2D72D;
+    --dark-color: #979898;
+    --dark-primary: #4795E0;
+    --indigo: #989798;
+    --purple: linear-gradient(185deg, rgba(17,27,19,1) 26%, rgba(41,135,41,1) 100%);;
     --pink: #f1388b;
     --orange: #fd7e14;
     --yellow: #ffc107;

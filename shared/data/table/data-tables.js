@@ -361,6 +361,117 @@ export function Hoverdatatable() {
     </div>
   );
 }
+
+/*TABLA DE COLECCIONES PARA CERTIBLOCK START*/ 
+export function ColeccionesTables() {
+
+  const columns = [
+    {
+      name: "ID",
+      selector: row => [row.ID],
+      sortable: true
+    },
+    {
+      name: "NAME",
+      selector: row => [row.NAME],
+      sortable: true
+    },
+    {
+      name: "TITLE",
+      selector: row => [row.TITLE],
+      sortable: true
+    },
+    {
+      name: "EMAIL",
+      selector: row => [row.EMAIL],
+      sortable: true,
+
+    },
+    {
+      name: "DATE",
+      selector: row => [row.DATE],
+      sortable: true,
+
+    },
+    {
+      name: " QR",
+      selector: row => [row.QR],
+      sortable: true
+    },
+    {
+      name: "STATEQR",
+      selector: row => [row.STATEQR],
+      sortable: true
+    },
+    {
+      name: "VISITORS",
+      selector: row => [row.VISITORS],
+      sortable: true
+    },
+  ];
+  const data = [
+    {
+      ID: "0",
+      NAME: "Mariano Restrepo",
+      TITLE: "GERENTE EN TECNOLOGIA",
+      EMAIL: "certiblock@gmail.com",
+      DATE: "01/12/22",
+      QR: "https://www.certiblock.co/api/qr/id/1",
+      STATEQR: "FALSE",
+      VISITORS: "0",
+    },
+    {
+      ID: "1",
+      NAME: "Joan Master",
+      TITLE: "DEVELOPER FULLS STACK",
+      EMAIL: "Johancertiblock@gmail.com",
+      DATE: "01/12/22",
+      QR: "https://www.certiblock.co/api/qr/id/1",
+      STATEQR: "TRUE",
+      VISITORS: "1",
+    },
+    {
+      ID: "2",
+      NAME: "Juan J",
+      TITLE: "DEVELOPER FULLS STACK",
+      EMAIL: "Juancertiblock@gmail.com",
+      DATE: "01/12/22",
+      QR: "https://www.certiblock.co/api/qr/id/1",
+      STATEQR: "FALSE",
+      VISITORS: "0",
+    },
+  ]
+
+  const tableData = {
+    columns,
+    data,
+  };
+
+  return (
+    <div className="table">
+      <DataTableExtensions {...tableData} >
+        <DataTable
+          title="Desserts"
+          columns={columns}
+          data={data}
+          noHeader
+          defaultSortField="id"
+          defaultSortAsc={false}
+          striped={true}
+          center={true}
+          persistTableHead
+          pagination
+          highlightOnHover
+        />
+      </DataTableExtensions>
+    </div>
+  );
+}
+/*TABLA DE COLECCIONES PARA CERTIBLOCK END*/ 
+
+
+
+
 export const DataTables = () => {
   const [selectedRows, setSelectedRows] = React.useState([]);
   const [toggleCleared, setToggleCleared] = React.useState(false);
