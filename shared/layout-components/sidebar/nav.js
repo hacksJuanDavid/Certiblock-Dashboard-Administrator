@@ -1,15 +1,56 @@
 export const MENUITEMS = [
   {
-    menutitle: "DASHBOARDS",
+    menutitle: "Admin Certiblock",
     Items: [
       {
-        path: "/components/dashboard/dashboard",
+        path: "/components/dashboardCertiblock/dashboard",
         icon: "fa fa-home",
         type: "link",
         active: false,
         selected: false,
         title: "Dashboard Certiblock",
       },
+      {
+        path: "/components/createCollectionsCertiblock/createCollection",
+        icon: "fe fe-layers",
+        type: "link",
+        active: false,
+        selected: false,
+        title: "Certiblock Crear Colecciones",
+      },
+      {
+        path: "/components/collectionsCertiblock/collection",
+        icon: "fe fe-shield",
+        type: "link",
+        active: false,
+        selected: false,
+        title: "Certiblock Colecciones",
+      },
+      {
+        path: "/components/createCertificatesCertiblock/createCertificate",
+        icon: "fe fe-cpu",
+        type: "link",
+        active: false,
+        selected: false,
+        title: "Certiblock Crear Certificados",
+      },
+      {
+        path: "/components/approveCollectionsCertiblock/approveCollection",
+        icon: "fe fe-lock",
+        type: "link",
+        active: false,
+        selected: false,
+        title: "Certiblock Aprobar Colecciones",
+      },
+      {
+        path: "/components/settingsCertiblock/settings",
+        icon: "fe fe-settings",
+        type: "link",
+        active: false,
+        selected: false,
+        title: "Certiblock Ajustes",
+      },
+
       {
         title: "Empresas",
         icon: "fa fa-briefcase",
@@ -32,11 +73,11 @@ export const MENUITEMS = [
             title: "Colecciones",
           },
           {
-            path: "/components/empresas/aprobaciones",
+            path: "/components/empresas/crearColecciones",
             type: "link",
             active: false,
             selected: false,
-            title: "Aprobaciones",
+            title: "Crear Colecciones",
           },
           {
             path: "/components/empresas/informacion",
@@ -44,6 +85,27 @@ export const MENUITEMS = [
             active: false,
             selected: false,
             title: "Información",
+          },
+          {
+            path: "/components/empresas/informacion",
+            type: "link",
+            active: false,
+            selected: false,
+            title: "Aprobar Colecciones",
+          },
+          {
+            path: "/components/empresas/informacion",
+            type: "link",
+            active: false,
+            selected: false,
+            title: "Notificaciones",
+          },
+          {
+            path: "/components/empresas/informacion",
+            type: "link",
+            active: false,
+            selected: false,
+            title: "Ajustes",
           },
           {
             path: "/components/empresas/marketcap",
@@ -95,6 +157,27 @@ export const MENUITEMS = [
             active: false,
             selected: false,
             title: "Dashboard Usuarios",
+          },
+          {
+            path: "/components/usuarios/dashboard",
+            type: "link",
+            active: false,
+            selected: false,
+            title: "Lista Usuarios",
+          },
+          {
+            path: "/components/usuarios/dashboard",
+            type: "link",
+            active: false,
+            selected: false,
+            title: "Mapas Usuarios",
+          },
+          {
+            path: "/components/usuarios/dashboard",
+            type: "link",
+            active: false,
+            selected: false,
+            title: "QR Lecturas Usuarios",
           },
           {
             path: "/components/usuarios/products",

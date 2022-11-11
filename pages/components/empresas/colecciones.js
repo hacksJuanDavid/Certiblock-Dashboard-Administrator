@@ -1,14 +1,13 @@
 import React from 'react'
 import PageHeader from '../../../shared/layout-components/page-header/page-header'
 import Seo from '../../../shared/layout-components/seo/seo';
-import { Tab, Nav, Dropdown, Form, Button, Col, Breadcrumb, Row, FormGroup, Card, Badge } from "react-bootstrap";
+import { Tab, Nav, Form, Button, Col, Breadcrumb, Row, FormGroup, Card, Badge } from "react-bootstrap";
 import Link from "next/link"
 
 import users2 from "../../../public/assets/img/users/2.jpg"
 import media3 from "../../../public/assets/img/media/3.jpg"
-import users4 from "../../../public/assets/img/users/4.jpg"
-import Tabss from './tabColecciones';
-
+import TabssCollections from './tabColecciones';
+import AprobacionesColecciones from './aprobacionesColecciones';
 
 
 const Colecciones = () => {
@@ -26,7 +25,7 @@ const Colecciones = () => {
       {/*Tab containier start */}
       <Tab.Container
         id="center-tabs-example"
-        defaultActiveKey="Biografia"
+        defaultActiveKey="InfoEmpresas"
         className="bg-gray-100"
       >
         {/*Tab container End */}
@@ -45,7 +44,7 @@ const Colecciones = () => {
                   <div className="profile-cover__info">
                     <ul className="nav">
                       <li>
-                        <strong>1</strong>Colecciones
+                        <strong>3</strong>Colecciones
                       </li>
                     </ul>
                   </div>
@@ -53,7 +52,7 @@ const Colecciones = () => {
                   <div className="profile-tab tab-menu-heading">
                     <Nav variant="pills" className="p-3 bg-primary-transparent">
                       <Nav.Item>
-                        <Nav.Link eventKey="Biografia">Biografia</Nav.Link>
+                        <Nav.Link eventKey="InfoEmpresas">Info Empresas</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
                         <Nav.Link eventKey="Notificationes">Notificationes <Badge bg="primary">0</Badge></Nav.Link>
@@ -88,16 +87,16 @@ const Colecciones = () => {
             <div className="card custom-card main-content-body-profile">
               {/*tab  container start */}
               <Tab.Content>
-                {/*tab pane container start Biografia */}
-                <Tab.Pane eventKey="Biografia">
+                {/*tab pane container start InfoEmpresas */}
+                <Tab.Pane eventKey="InfoEmpresas">
                   <div lg={12} md={12}>
                     <Card className="custom-card main-content-body-profile">
                       <div className="tab-content">
                         <div className="main-content-body tab-pane p-sm-4 p-0 border-top-0 active">
                           <div className=" p-0 border p-0 rounded-10">
                             <div className="p-4">
-                              <h4 className="tx-15 text-uppercase mb-3 text-info">
-                                Biografia
+                              <h4 className="tx-15 text-uppercase mb-3 text-primary">
+                              Info Empresas
                               </h4>
                               <p className="m-b-5">
                                 Somos la Univeridad de Eafit y nos dedicamos a la educacion superior y a la investigacion
@@ -109,17 +108,17 @@ const Colecciones = () => {
                                 posibilidad de tener un control de los mismos y de la informacion que estos contienen.
                               </p>
                               <div className="m-t-30">
-                                <h4 className="tx-15 text-uppercase mt-3 text-info">
+                                <h4 className="tx-15 text-uppercase mt-3 text-primary">
                                   Informacion de Univeridad
                                 </h4>
                                 <div className=" p-t-10">
                                   <p className="mb-0 text-muted">
-                                    <span className="mb-0 text-info ">
+                                    <span className="mb-0 text-primary ">
                                       <i className="fe fe-chevrons-right"></i>url: eafit.edu.co
                                     </span>
                                   </p>
                                   <p className="mb-0 text-muted">
-                                    <span className="mb-0 text-info ">
+                                    <span className="mb-0 text-primary ">
                                       <i className="fe fe-chevrons-right"></i>fecha: 1964-2022
                                     </span>
                                   </p>
@@ -189,7 +188,7 @@ const Colecciones = () => {
                   </div>
                   {/*container component end */}
                 </Tab.Pane>
-                {/*tab pane container Biografia end */}
+                {/*tab pane container InfoEmpresas end */}
 
                 {/*tab pane container Notificationes start */}
                 <Tab.Pane eventKey="Notificationes">
@@ -209,7 +208,7 @@ const Colecciones = () => {
                                     </div>
                                     <div className="media-body">
                                       <h6 className="mb-0 mg-t-2 ms-2">Notificaion de Certiblock</h6>
-                                      <span className="text-info ms-2">Hace un momento</span>
+                                      <span className="text-primary ms-2">Hace un momento</span>
                                     </div>
                                   </div>
                                 </Card.Header>
@@ -227,13 +226,13 @@ const Colecciones = () => {
                                   <Row className=" row-sm">
                                     <div className="col">
                                       <p className="mb-0 text-muted">
-                                        <span className="mb-0 text-success fs-13 mx-2">
+                                        <span className="mb-0 text-primary fs-13 mx-2">
                                           <i className="fe fe-copy"></i> Aqui esta la coleccion de certificados para eafit:
                                         </span>
                                       </p>
                                       <img alt="img" className="wd-400 m-6" src={media3.src} />
                                       <p className="mb-0 text-muted">
-                                        <span className="mb-0 text-success fs-13 mx-2">
+                                        <span className="mb-0 text-primary fs-13 mx-2">
                                           <i className="fe fe-hash"></i> url:
                                         </span>
                                         https://certiblock.com/verificacion/5f9f9b0b0b9b8c0017b6b1b1
@@ -253,7 +252,7 @@ const Colecciones = () => {
                                                     <span className="counter">01/12/2022</span>
                                                   </h2>
                                                   <p className="mb-0 text-muted">
-                                                    <span className="mb-0 text-success fs-13 mx-2">
+                                                    <span className="mb-0 text-primary fs-13 mx-2">
                                                       <i className="fe fe-clock"></i> 12:00 am
                                                     </span>
                                                     desde medellin colombia
@@ -267,7 +266,7 @@ const Colecciones = () => {
                                                     <span className="counter">10,000</span>
                                                   </h2>
                                                   <p className="mb-0 text-muted">
-                                                    <span className="mb-0 text-success fs-13 mx-2">
+                                                    <span className="mb-0 text-primary fs-13 mx-2">
                                                       <i className="fe fe-database"></i> 100%
                                                     </span>
                                                     completado el minteo
@@ -295,7 +294,7 @@ const Colecciones = () => {
                                                     <span className="counter">Mariano</span>
                                                   </h2>
                                                   <p className="mb-0 text-muted">
-                                                    <span className="mb-0 text-success fs-13 mx-2">
+                                                    <span className="mb-0 text-primary fs-13 mx-2">
                                                       <i className="fe fe-user-check"></i> verificado
                                                     </span>
                                                     Administracion certiblock
@@ -319,85 +318,32 @@ const Colecciones = () => {
                 </Tab.Pane>
                 {/*tab pane container Notificationes end */}
 
-                {/*Start Colecciones*/}
+                {/*Start tables Colecciones*/}
                 <Tab.Pane eventKey="Colecciones">
                   <div>
                     <div className="card-body border">
                       <div className="demo-gallery">
-                        <Tabss/>
+                        <TabssCollections />
                       </div>
                     </div>
                   </div>
                 </Tab.Pane>
-                {/*end Colecciones*/}
+                {/*end tables Colecciones*/}
 
 
                 {/*Start aprobaciones*/}
                 <Tab.Pane eventKey="Aprobaciones" className="main-content-body tab-pane border-top-0">
                   <div className="card-body border pd-b-10">
                     <Row className=" row-sm">
-                      <Col sm={12} md={6} xl={3}>
-                        <Card className="custom-card border">
-                          <div className=" text-center">
-                            <div className="user-lock text-center">
-                              <Dropdown className="text-end">
-                                <Dropdown.Toggle href="#" variant="default">
-                                  <i className="fe fe-more-vertical"></i>
-                                </Dropdown.Toggle>
-                                <Dropdown.Menu className=" dropdown-menu-end" style={{ marginTop: "0px" }}>
-                                  <Dropdown.Item href="#">
-                                    <i className="fe fe-message-square me-2"></i>
-                                    Message
-                                  </Dropdown.Item>
-                                  <Dropdown.Item href="#">
-                                    <i className="fe fe-edit-2 me-2"></i> Edit
-                                  </Dropdown.Item>
-                                  <Dropdown.Item href="#">
-                                    <i className="fe fe-eye me-2"></i> View
-                                  </Dropdown.Item>
-                                  <Dropdown.Item href="#">
-                                    <i className="fe fe-trash-2 me-2"></i>
-                                    Delete
-                                  </Dropdown.Item>
-                                </Dropdown.Menu>
-                              </Dropdown>
-                              <Link href="#">
-                                <a>
-                                  <img
-                                    alt="avatar"
-                                    className="rounded-circle"
-                                    src={users4.src}
-                                  />
-                                </a>
-                              </Link>
-                            </div>
-                            <Link href="#">
-                              <a>
-                                <h5 className=" mb-1 mt-3 main-content-label">
-                                  Socrates Itumay
-                                </h5>
-                              </a>
-                            </Link>
-                            <p className="mb-2 mt-1 tx-inverse">
-                              Project Manager
-                            </p>
-                            <p className="text-muted text-center mt-1">
-                              Lorem Ipsum is not simply popular belief
-                              Contrary.
-                            </p>
-                          </div>
-                        </Card>
-                      </Col>
+                        <AprobacionesColecciones />
                     </Row>
                   </div>
                   {/* </div> */}
                 </Tab.Pane>
                 {/*End aprobaciones*/}
-                
+
                 <Tab.Pane eventKey="setting">
-                  <div
-                    className="main-content-body tab-pane p-sm-4 p-0 border-top-0"
-                  >
+                  <div className="main-content-body tab-pane p-sm-4 p-0 border-top-0">
                     <div className="card-body border" data-select2-id="12">
                       <Form className="form-horizontal" data-select2-id="11">
                         <div className="mb-4 main-content-label">Account</div>
