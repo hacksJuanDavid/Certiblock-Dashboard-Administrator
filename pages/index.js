@@ -5,7 +5,7 @@ import styles from '../styles/Home.module.scss'
 import favicon from "../public/assets/img/brand/favicon.ico"
 import { useState } from 'react';
 import Link from "next/link";
-// import Dashboard from "../pages/components/dashboard/dashboard"
+//import Dashboard from "../pages/components/dashboard/dashboard"
 
 
 //Images
@@ -28,7 +28,7 @@ const Home = ()=>{
   }
   let navigate = useRouter(); 
   const routeChange = () =>{ 
-    let path = `/components/dashboard/dashboard/`; 
+    let path = `/components/dashboardCertiblock/dashboard/`; 
     navigate.push(path);
   }
 
